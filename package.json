@@ -1,0 +1,25 @@
+{
+  "name": "web-track",
+  "version": "1.0.0",
+  "description": "Small web app for tracking employees' working time",
+  "private": true,
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
